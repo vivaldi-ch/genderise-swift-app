@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -31,11 +32,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func performApiCall(text: String?) {
-        let baseUrl: String = "https://genderize.io/?name="
-        let completeUrl = baseUrl + parseNameText(name: text!)!
+        let baseUrl: String = "https://api.genderize.io/"
+        let parameter: Parameters = ["name": parseNameText(text!)!]
+        
+        AF.request(baseUrl, parameters: parameter).validate().responseJSON { response in
+            switch response.result {
+            case .success:
+                let jsonData = response.result.value
+                debugPrint(jsonData)
+            case .failure(let error):
+                self.onError(error)
+            }
+        }
+    }
+    
+    func onError(_ error: Any) {
+        // TODO: Handle error
     }
 
-    func showAlertMessage(text: String?) {
+    func showAlertMessage(_ text: String?) {
         if (text ?? "").isEmpty {
             return
         }
@@ -47,11 +62,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func parseNameText(name: String) -> (String?) {
+    func parseNameText(_ name: String) -> (String?) {
         let nameArr = name.components(separatedBy: " ")
-        let firstName: String = nameArr[0]
-        
-        return firstName.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        return nameArr[0]
     }
 }
 

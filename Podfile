@@ -7,6 +7,7 @@ target 'genderise' do
 
   # Pods for genderise
   pod 'Result', '~> 4.0.0'
+  pod 'Alamofire', '~> 5.0.0-beta.2'
 
   target 'genderiseTests' do
     inherit! :search_paths
