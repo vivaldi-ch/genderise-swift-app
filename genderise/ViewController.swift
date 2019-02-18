@@ -50,6 +50,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func onSuccess(_ jsonData: [String: Any]) {
+        self.percentageLabel.isHidden = false
+        
         if let gender = jsonData["gender"] as? String,
             let probability = jsonData["probability"] as? Float {
             self.genderLabel.isHidden = false
