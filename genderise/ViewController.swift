@@ -38,8 +38,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
         AF.request(baseUrl, parameters: parameter).validate().responseJSON { response in
             switch response.result {
             case .success:
-                let jsonData = response.result.value
-                debugPrint(jsonData)
+                debugPrint(response.result.value!)
+                
+                if let jsonData = response.result.value as? [String: Any] {
+                    if let gender = jsonData["gender"] as? String {
+                        self.genderLabel.isHidden = false
+                        self.genderLabel.text = gender.capitalized
+                        
+                        if let probability = jsonData["probability"] as? Float {
+                            let percentage: Int = Int(probability * 100)
+                            self.percentageLabel.text = "There is a \(percentage)% that you are a..."
+                        }
+                    } else {
+                        self.genderLabel.isHidden = true
+                        self.percentageLabel.text = "Your gender is indeterminate..."
+                    }
+                }
             case .failure(let error):
                 self.onError(error)
             }
@@ -48,6 +62,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func onError(_ error: Any) {
         // TODO: Handle error
+        print(error)
     }
 
     func showAlertMessage(_ text: String?) {

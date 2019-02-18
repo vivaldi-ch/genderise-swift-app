@@ -56,7 +56,7 @@
                     <connections>
                         <outlet property="genderLabel" destination="x3J-8I-NT9" id="WOL-ee-bJQ"/>
                         <outlet property="nameTextField" destination="AkA-oJ-E6V" id="kOu-2T-WCh"/>
-                        <outlet property="percentageLabel" destination="25z-MQ-bJi" id="b8O-eb-j5p"/>
+                        <outlet property="percentageLabel" destination="25z-MQ-bJi" id="Qns-6B-kj6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
