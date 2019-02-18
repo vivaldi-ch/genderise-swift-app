@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10826D3E32AE0A39CB36248E /* Pods_genderiseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AD3E58251BDFC07A7AD3CB /* Pods_genderiseTests.framework */; };
+		4EACFA0C1FC19D966FB42E58 /* Pods_genderiseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420184CDE695C6FFD052E9A7 /* Pods_genderiseTests.framework */; };
+		9B76303D80519FB259E62B0C /* Pods_genderise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4220EA3E8F0EF777C98FD6EC /* Pods_genderise.framework */; };
 		F4ACAF792217C0AA006278FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACAF782217C0AA006278FA /* AppDelegate.swift */; };
 		F4ACAF7B2217C0AA006278FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACAF7A2217C0AA006278FA /* ViewController.swift */; };
 		F4ACAF7E2217C0AA006278FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ACAF7C2217C0AA006278FA /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		F4ACAF832217C0AB006278FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ACAF812217C0AB006278FA /* LaunchScreen.storyboard */; };
 		F4ACAF8E2217C0AB006278FA /* genderiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACAF8D2217C0AB006278FA /* genderiseTests.swift */; };
 		F4ACAFA122198366006278FA /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACAFA022198366006278FA /* Gender.swift */; };
-		F6B52858B3DF741FF172EDF1 /* Pods_genderise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589B94BD0019E856B2E2F6F3 /* Pods_genderise.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,12 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		299DA7BEEB7ED673B51F0641 /* Pods-genderise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genderise.debug.xcconfig"; path = "Target Support Files/Pods-genderise/Pods-genderise.debug.xcconfig"; sourceTree = "<group>"; };
-		49230736849B7C147CFFEB64 /* Pods-genderiseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genderiseTests.debug.xcconfig"; path = "Target Support Files/Pods-genderiseTests/Pods-genderiseTests.debug.xcconfig"; sourceTree = "<group>"; };
-		589B94BD0019E856B2E2F6F3 /* Pods_genderise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_genderise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		60AD3E58251BDFC07A7AD3CB /* Pods_genderiseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_genderiseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA298D73EDF0F0FD4599E499 /* Pods-genderise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genderise.release.xcconfig"; path = "Target Support Files/Pods-genderise/Pods-genderise.release.xcconfig"; sourceTree = "<group>"; };
-		E06F0DB54D8AA6A136BB6D21 /* Pods-genderiseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genderiseTests.release.xcconfig"; path = "Target Support Files/Pods-genderiseTests/Pods-genderiseTests.release.xcconfig"; sourceTree = "<group>"; };
+		076248AF284045EBD9EA1983 /* Pods-genderiseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genderiseTests.debug.xcconfig"; path = "Target Support Files/Pods-genderiseTests/Pods-genderiseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		420184CDE695C6FFD052E9A7 /* Pods_genderiseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_genderiseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4220EA3E8F0EF777C98FD6EC /* Pods_genderise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_genderise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A0E224772A5DD594CBCB75 /* Pods-genderise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genderise.debug.xcconfig"; path = "Target Support Files/Pods-genderise/Pods-genderise.debug.xcconfig"; sourceTree = "<group>"; };
+		8C6AE9B7CE76DCB6EF51C9F4 /* Pods-genderiseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genderiseTests.release.xcconfig"; path = "Target Support Files/Pods-genderiseTests/Pods-genderiseTests.release.xcconfig"; sourceTree = "<group>"; };
+		94A300FD57C51DE9A5272DCF /* Pods-genderise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genderise.release.xcconfig"; path = "Target Support Files/Pods-genderise/Pods-genderise.release.xcconfig"; sourceTree = "<group>"; };
 		F4ACAF752217C0AA006278FA /* genderise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = genderise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4ACAF782217C0AA006278FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4ACAF7A2217C0AA006278FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6B52858B3DF741FF172EDF1 /* Pods_genderise.framework in Frameworks */,
+				9B76303D80519FB259E62B0C /* Pods_genderise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,18 +61,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10826D3E32AE0A39CB36248E /* Pods_genderiseTests.framework in Frameworks */,
+				4EACFA0C1FC19D966FB42E58 /* Pods_genderiseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D3C260B6EA3B1E91C1F8CD0 /* Frameworks */ = {
+		29EA591A155981B69FBBF71A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				589B94BD0019E856B2E2F6F3 /* Pods_genderise.framework */,
-				60AD3E58251BDFC07A7AD3CB /* Pods_genderiseTests.framework */,
+				4220EA3E8F0EF777C98FD6EC /* Pods_genderise.framework */,
+				420184CDE695C6FFD052E9A7 /* Pods_genderiseTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,10 +80,10 @@
 		F339127CDC3A52B356478B5D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				299DA7BEEB7ED673B51F0641 /* Pods-genderise.debug.xcconfig */,
-				AA298D73EDF0F0FD4599E499 /* Pods-genderise.release.xcconfig */,
-				49230736849B7C147CFFEB64 /* Pods-genderiseTests.debug.xcconfig */,
-				E06F0DB54D8AA6A136BB6D21 /* Pods-genderiseTests.release.xcconfig */,
+				71A0E224772A5DD594CBCB75 /* Pods-genderise.debug.xcconfig */,
+				94A300FD57C51DE9A5272DCF /* Pods-genderise.release.xcconfig */,
+				076248AF284045EBD9EA1983 /* Pods-genderiseTests.debug.xcconfig */,
+				8C6AE9B7CE76DCB6EF51C9F4 /* Pods-genderiseTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -95,7 +95,7 @@
 				F4ACAF8C2217C0AB006278FA /* genderiseTests */,
 				F4ACAF762217C0AA006278FA /* Products */,
 				F339127CDC3A52B356478B5D /* Pods */,
-				2D3C260B6EA3B1E91C1F8CD0 /* Frameworks */,
+				29EA591A155981B69FBBF71A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,11 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4ACAF922217C0AB006278FA /* Build configuration list for PBXNativeTarget "genderise" */;
 			buildPhases = (
-				DD4484C4B3AB35C0FDCA4D3B /* [CP] Check Pods Manifest.lock */,
+				2A6A6FFE55A51A365517FAEB /* [CP] Check Pods Manifest.lock */,
 				F4ACAF712217C0AA006278FA /* Sources */,
 				F4ACAF722217C0AA006278FA /* Frameworks */,
 				F4ACAF732217C0AA006278FA /* Resources */,
-				F74D3C219A4032C720D8F828 /* [CP] Embed Pods Frameworks */,
+				C0BE1D36C952A13DBB3A7271 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,7 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4ACAF952217C0AB006278FA /* Build configuration list for PBXNativeTarget "genderiseTests" */;
 			buildPhases = (
-				F0DDC77C33A7689A444B55CF /* [CP] Check Pods Manifest.lock */,
+				8797374D084E0DFCDC867037 /* [CP] Check Pods Manifest.lock */,
 				F4ACAF852217C0AB006278FA /* Sources */,
 				F4ACAF862217C0AB006278FA /* Frameworks */,
 				F4ACAF872217C0AB006278FA /* Resources */,
@@ -239,7 +239,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		DD4484C4B3AB35C0FDCA4D3B /* [CP] Check Pods Manifest.lock */ = {
+		2A6A6FFE55A51A365517FAEB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,7 +261,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F0DDC77C33A7689A444B55CF /* [CP] Check Pods Manifest.lock */ = {
+		8797374D084E0DFCDC867037 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,7 +283,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F74D3C219A4032C720D8F828 /* [CP] Embed Pods Frameworks */ = {
+		C0BE1D36C952A13DBB3A7271 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,14 +293,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-genderise/Pods-genderise-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -476,7 +474,7 @@
 		};
 		F4ACAF932217C0AB006278FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 299DA7BEEB7ED673B51F0641 /* Pods-genderise.debug.xcconfig */;
+			baseConfigurationReference = 71A0E224772A5DD594CBCB75 /* Pods-genderise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -494,7 +492,7 @@
 		};
 		F4ACAF942217C0AB006278FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA298D73EDF0F0FD4599E499 /* Pods-genderise.release.xcconfig */;
+			baseConfigurationReference = 94A300FD57C51DE9A5272DCF /* Pods-genderise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -512,7 +510,7 @@
 		};
 		F4ACAF962217C0AB006278FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49230736849B7C147CFFEB64 /* Pods-genderiseTests.debug.xcconfig */;
+			baseConfigurationReference = 076248AF284045EBD9EA1983 /* Pods-genderiseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,7 +531,7 @@
 		};
 		F4ACAF972217C0AB006278FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E06F0DB54D8AA6A136BB6D21 /* Pods-genderiseTests.release.xcconfig */;
+			baseConfigurationReference = 8C6AE9B7CE76DCB6EF51C9F4 /* Pods-genderiseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

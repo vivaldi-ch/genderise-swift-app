@@ -41,22 +41,26 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 debugPrint(response.result.value!)
                 
                 if let jsonData = response.result.value as? [String: Any] {
-                    if let gender = jsonData["gender"] as? String {
-                        self.genderLabel.isHidden = false
-                        self.genderLabel.text = gender.capitalized
-                        
-                        if let probability = jsonData["probability"] as? Float {
-                            let percentage: Int = Int(probability * 100)
-                            self.percentageLabel.text = "There is a \(percentage)% that you are a..."
-                        }
-                    } else {
-                        self.genderLabel.isHidden = true
-                        self.percentageLabel.text = "Your gender is indeterminate..."
-                    }
+                    self.onSuccess(jsonData)
                 }
             case .failure(let error):
                 self.onError(error)
             }
+        }
+    }
+    
+    func onSuccess(_ jsonData: [String: Any]) {
+        if let gender = jsonData["gender"] as? String {
+            self.genderLabel.isHidden = false
+            self.genderLabel.text = gender.capitalized
+            
+            if let probability = jsonData["probability"] as? Float {
+                let percentage: Int = Int(probability * 100)
+                self.percentageLabel.text = "There is a \(percentage)% that you are a..."
+            }
+        } else {
+            self.genderLabel.isHidden = true
+            self.percentageLabel.text = "Your gender is indeterminate..."
         }
     }
     

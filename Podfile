@@ -6,7 +6,6 @@ target 'genderise' do
   use_frameworks!
 
   # Pods for genderise
-  pod 'Result', '~> 4.0.0'
   pod 'Alamofire', '~> 5.0.0-beta.2'
 
   target 'genderiseTests' do
