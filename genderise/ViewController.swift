@@ -65,6 +65,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let baseUrl: String = "https://api.genderize.io/"
         let parameter: Parameters = ["name": parseNameText(text!)!]
         
+        genderLabel.isHidden = true
+        percentageLabel.isHidden = true
+        
         startAndShowProgressView()
         
         AF.request(baseUrl, parameters: parameter).validate().responseJSON { response in
