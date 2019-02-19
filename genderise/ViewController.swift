@@ -8,12 +8,15 @@
 
 import UIKit
 import Alamofire
+import MaterialComponents.MaterialProgressView
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var percentageLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
+    
+    var progressView: MDCProgressView! = MDCProgressView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +35,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         percentageLabel.layer.add(animation, forKey: nil)
         genderLabel.layer.add(animation, forKey: nil)
+        
+        addProgressBar()
+    }
+    
+    func addProgressBar() {
+        progressView.progressTintColor = UIColor.yellow
+        progressView.trackTintColor = UIColor.white
+        
+        let progressViewHeight = CGFloat(2)
+        progressView.frame = CGRect(x: 0, y: (view.bounds.height / 2) + nameTextField.frame.size.height, width: nameTextField.frame.size.width, height: progressViewHeight)
+        progressView.center.x = view.center.x
+        
+        view.addSubview(progressView)
+        
+        self.progressView.setHidden(true, animated: false)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -47,16 +65,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let baseUrl: String = "https://api.genderize.io/"
         let parameter: Parameters = ["name": parseNameText(text!)!]
         
+        startAndShowProgressView()
+        
         AF.request(baseUrl, parameters: parameter).validate().responseJSON { response in
-            switch response.result {
-            case .success:
-                debugPrint(response.result.value!)
+            self.progressView.setProgress(1, animated: true) { (finished) in
+                self.progressView.setHidden(true, animated: false)
                 
-                if let jsonData = response.result.value as? [String: Any] {
-                    self.onSuccess(jsonData)
+                switch response.result {
+                case .success:
+                    debugPrint(response.result.value!)
+                    
+                    if let jsonData = response.result.value as? [String: Any] {
+                        self.onSuccess(jsonData)
+                    }
+                case .failure(let error):
+                    self.onError(error)
                 }
-            case .failure(let error):
-                self.onError(error)
             }
         }
     }
@@ -97,6 +121,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func parseNameText(_ name: String) -> (String?) {
         let nameArr = name.components(separatedBy: " ")
         return nameArr[0]
+    }
+    
+    func startAndShowProgressView() {
+        progressView.progress = 0
+        progressView.setHidden(false, animated: true)
     }
 }
 
