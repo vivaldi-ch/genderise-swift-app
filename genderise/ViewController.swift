@@ -20,6 +20,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         // Do any additional setup after loading the view, typically from a nib.
         nameTextField.delegate = self
+        
+        initComponent()
+    }
+    
+    func initComponent() {
+        let animation: CATransition = CATransition()
+        animation.duration = 1.0
+        animation.type = CATransitionType.fade
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        
+        percentageLabel.layer.add(animation, forKey: nil)
+        genderLabel.layer.add(animation, forKey: nil)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -53,7 +65,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.percentageLabel.isHidden = false
         
         if let gender = jsonData["gender"] as? String,
-            let probability = jsonData["probability"] as? Float {
+            let probability = jsonData["probability"] as? Double {
             self.genderLabel.isHidden = false
             self.genderLabel.text = gender.capitalized
             
