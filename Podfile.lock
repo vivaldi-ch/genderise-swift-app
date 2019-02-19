@@ -1,16 +1,36 @@
 PODS:
   - Alamofire (5.0.0-beta.2)
+  - MaterialComponents/Palettes (77.0.0)
+  - MaterialComponents/private/Math (77.0.0)
+  - MaterialComponents/ProgressView (77.0.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MDFInternationalization
+    - MotionAnimator (~> 2.1)
+  - MDFInternationalization (2.0.0)
+  - MotionAnimator (2.8.1):
+    - MotionInterchange (~> 1.6)
+  - MotionInterchange (1.6.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.2)
+  - MaterialComponents/ProgressView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - MaterialComponents
+    - MDFInternationalization
+    - MotionAnimator
+    - MotionInterchange
 
 SPEC CHECKSUMS:
   Alamofire: d1e5493588babe3e7b56ae29e8032942f4de09fe
+  MaterialComponents: 1dc805d52502bd9d5692c2ffcc8a169c8b65b916
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
+  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
 
-PODFILE CHECKSUM: bddaf2d49f2d8f00df0907fbe0d10f1e6725b7f4
+PODFILE CHECKSUM: 0f25cddbe572c17efeab361b65025cc0121719c9
 
 COCOAPODS: 1.6.0

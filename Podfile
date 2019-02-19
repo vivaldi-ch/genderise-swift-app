@@ -7,6 +7,7 @@ target 'genderise' do
 
   # Pods for genderise
   pod 'Alamofire', '~> 5.0.0-beta.2'
+  pod 'MaterialComponents/ProgressView'
 
   target 'genderiseTests' do
     inherit! :search_paths
