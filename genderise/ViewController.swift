@@ -104,17 +104,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func onError(_ error: Any) {
-        // TODO: Handle error
-        print(error)
+    func onError(_ error: Error) {
+        showAlertMessage(error.localizedDescription, "Error")
     }
 
-    func showAlertMessage(_ text: String?) {
+    func showAlertMessage(_ text: String?,_ title: String) {
         if (text ?? "").isEmpty {
             return
         }
         
-        let alert = UIAlertController(title: "My Alert", message: text, preferredStyle: .alert)
+        let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alert.addAction(cancelAction)
         
